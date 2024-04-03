@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files</title>
+</head>
+<body>
+    <h2>Merge Scores from Two SMX Backups</h2>
+    <p>Select two StepManiaX_backup.zip files to merge.<br>
+    The first file selected should be the restore target machine.<br><br>
+    <strong>New zip needs to be renamed to StepManiaX_backup.zip to restore.</strong>
+    </p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file1">Machine Backup Main:</label>
+        <input type="file" id="file1" name="file1"><br><br>
+        
+        <label for="file2">Machine Backup to merge with:</label>
+        <input type="file" id="file2" name="file2"><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
